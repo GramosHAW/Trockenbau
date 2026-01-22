@@ -15,13 +15,13 @@ export function Navigation() {
   const pathname = usePathname()
 
   return (
-    <nav className="bg-blue-100/90 shadow-xs sticky top-0 z-50">
+    <nav className="bg-blue-100 shadow-xs sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-32">
           {/* Firmenname und Slogan links */}
           <Link href="/" className="flex flex-col">
             <h1 className="text-2xl sm:text-2xl font-bold text-gray-900">
-              Patrik Kljajic - Gebäudereinigung
+              Patrik Kljajic Gebäudereinigung
             </h1>
             <p className="text-sm sm:text-base text-gray-400 italic mt-1">
               Putz, Putz, weg mit dem Schmutz, wir machen Schmutz Geschichte!
@@ -38,7 +38,7 @@ export function Navigation() {
                   href={item.href}
                   className={`px-5 py-3 text-sm font-semibold rounded-none transition-all duration-200 ${
                     isActive
-                      ? 'bg-blue-800 text-white shadow-md shadow-blue-600/100'
+                      ? 'bg-blue-800 text-white shadow-md shadow-blue-600/90'
                       : 'bg-white text-blue-800 hover:bg-blue-800 hover:-translate-y-0.5 hover:shadow-lg hover:text-white' 
                   }`}
                 >
